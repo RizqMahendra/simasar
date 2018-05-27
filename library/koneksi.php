@@ -4,7 +4,7 @@ $username = "root"; // username
 $database = "dbpasar"; // buat nama database harus sama 
 
 // Koneksi dan memilih database di server
-$conn =new mysqli_connect($server,$username,$database);
+$conn =new mysqli($server,$username,$database);
 
 if($conn->connect_error) 
 {
