@@ -4,6 +4,11 @@ $username = "root"; // username
 $database = "dbpasar"; // buat nama database harus sama 
 
 // Koneksi dan memilih database di server
-mysql_connect($server,$username) or die("Koneksi gagal");
-mysql_select_db($database) or die("Database tidak bisa dibuka");
+$conn =new mysqli_connect($server,$username,$database);
+
+if($conn->connect_error) 
+{
+    die("Connection Failed : ".$conn->connect_error);
+} 
+echo "Connected Successfully";
 ?>

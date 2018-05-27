@@ -1,3 +1,6 @@
+<?php
+require 'library/koneksi.php';
+?>
 <html lang="en">
 
 <head>
