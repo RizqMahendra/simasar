@@ -1,14 +1,14 @@
 <?php
-$server = "localhost"; //nama server
-$username = "root"; // username 
-$database = "dbpasar"; // buat nama database harus sama 
 
 // Koneksi dan memilih database di server
-$conn =new mysqli_connect($server,$username,$database);
+$conn = new mysqli("localhost","root","","db_pasar");
 
-if($conn->connect_error) 
+if($conn == false) 
 {
-    die("Connection Failed : ".$conn->connect_error);
-} 
-echo "Connected Successfully";
+    die("Connection Failed : ". $conn->connect_error);
+}
+else {
+    echo "Connected Successfully";
+}
+
 ?>
