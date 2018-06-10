@@ -43,28 +43,7 @@ require 'library/koneksi.php';
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand" href="#">Simasar</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-          <a class="navbar-brand" href="#"style="margin-left:30px;">Tentang Kami</a>
-           <a class="navbar-brand" href="#"style="margin-left:30px;">Pasar dalam Berita</a>
-            <a class="navbar-brand" href="#"style="margin-left:30px;">Info Lapak</a>
-             <a class="navbar-brand" href="#"style="margin-left:30px;">Lokasi Pasar</a>
-             <a class="navbar-brand" href="#"style="margin-left:30px;">Tata Kelola</a>
-             <a class="navbar-brand" href="#"style="margin-left:30px;">Login</a>
-      </div>
-    </div>
-  </nav>
-
+  <?php include 'homepage/header.php'?>
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
       <div class="container">
@@ -250,27 +229,7 @@ require 'library/koneksi.php';
 
     <hr>
 
-    <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Deskripsi</h3>
-      <p>Perusahaan Daerah Pasar Pakuan Jaya (PD PPJ) didirikan di Kota Bogor pada tanggal 7 Juli 2009, 
-        berdasarkan Peraturan Daerah Kota Bogor Nomor 4 tahun 2009 yang bertujuan untuk mengelola pasar rakyat di Kota Bogor</p>
-            </div>
-     <div class="col-md-4">
-       <h3></h3>
-      <p>Di Bootstrap Oleh Fathiyarizq Mahendra Putra</p>
-            </div>
-     <div class="col-md-4">
-       <h3>Kontak Kami</h3>
-      <p><strong>Alamat :</strong>Gedung BC ILKOM</p>
-      <p><strong>No Telp:</strong>(0361) 27596</p>
-      <p><strong>Email :</strong>hendrasatuan@gmail.com</p>
-            </div>
-          </div>
-        </div>
-    </footer>
+<?php include 'homepage/footer.php'?>
   </div>
   <!-- /container -->
   <script>

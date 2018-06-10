@@ -42,28 +42,7 @@ require 'library/koneksi.php';
 </head>
 
 <body>
-
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand" href="#">Simasar</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-          <a class="navbar-brand" href="#"style="margin-left:30px;">Tentang Kami</a>
-           <a class="navbar-brand" href="#"style="margin-left:30px;">Pasar dalam Berita</a>
-            <a class="navbar-brand" href="#"style="margin-left:30px;">Info Lapak</a>
-             <a class="navbar-brand" href="#"style="margin-left:30px;">Lokasi Pasar</a>
-             <a class="navbar-brand" href="#"style="margin-left:30px;">Tata Kelola</a>
-             <a class="navbar-brand" href="#"style="margin-left:30px;">Login</a>
-      </div>
-    </div>
-  </nav>
+<?php include 'homepage/header.php'?>
 <section class="page-header page-header-color page-header-primary page-header-more-padding">
 	<div class="container">
 		<div class="row">
@@ -144,5 +123,6 @@ require 'library/koneksi.php';
          </div>
     </div>
 </div>
+<?php include 'homepage/footer.php'?>
 </body>
 </html>
